@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: url("/Shadow.jpg") no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.page-main {
+    min-height: 100vh;
+    display: flex;
+}
+
+.product {
+    margin: auto;
+}
+
+.product-intro {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.product-list__item-foirgras {
+    background: url("/Back-blue.png") no-repeat;
+    width: 320px;
+    min-height: 480px;
+    position: relative;
+    background-position-x: -24px;
+    margin-left: 38px;
+    margin-right: 38px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.product-list__item-fish {
+    background: url("/2kg-blue-back.png") no-repeat;
+    width: 320px;
+    min-height: 480px;
+    position: relative;
+    margin-left: 38px;
+    margin-right: 38px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.product-list__item-chicken {
+    background: url("/5kg-back-blue.png") no-repeat;
+    background-position-x: -24px;
+    width: 320px;
+    min-height: 480px;
+    position: relative;
+    background-position-x: -24px;
+    margin-left: 38px;
+    margin-right: 38px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.product-list__description {
+    margin-left: 48px;
+    margin-right: 40px;
+    margin-top: 25px;
+    margin-bottom: 0;
+    color: black;
+}
+
+.product-list__head {
+    margin-top: 12px;
+    margin-left: 45px;
+    margin-right: 40px;
+    margin-bottom: 0;
+    font-size: 50px;
+    line-height: 30px;
+    color: black;
+}
+
+.product-list__head span {
+    font-size: 30px;
+    color: black;
+}
+
+.product-list__advantage {
+    margin-left: 45px;
+    margin-right: 40px;
+    color: black;
+}
+
+.product-list__weight {
+    position: absolute;
+    left: 220px;
+    top: 385px;
+}
+
+.product-list__link {
+    position: absolute;
+    display: block;
+    left: 45px;
+    top: 475px;
+}
+
+.product-list__link--hover {
+    position: absolute;
+    display: block;
+    left: 25px;
+    top: 475px;
+    display: none;
+}
+
+.product-list__link--disabled {
+    display: none;
+}
+
+.product-list__link span {
+    color: #1698d9;
+    border-bottom: 1px dashed #1698d9;
+}
+
+.product-list__item-foirgras--active {
+    background: url("/back-red.png") no-repeat;
+    width: 320px;
+    min-height: 480px;
+    position: relative;
+    margin-left: 38px;
+    margin-right: 38px;
+    margin-bottom: 40px;
+    cursor: pointer; 
+}
+
+.product-list__item-foirgras--active .product-list__link {
+    display: none;
+}
+
+.product-list__item-foirgras--active .product-list__link--hover {
+    display: block;
+}
+
+.product-list__item-foirgras--disabled {
+    width: 320px;
+    min-height: 480px;
+    position: relative;
+    background: url("/0\,5kg-disabled.png") no-repeat;
+    background-position-x: -24px;
+    margin-left: 38px;
+    margin-right: 38px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    color: rgba (255, 255 , 255, 0.3);
+}
+
+.product-list__item-foirgras--disabled .product-list__link--disabled {
+    position: absolute;
+    display: block;
+    left: 45px;
+    top: 475px;
+    color: yellow;
+    display: block;
+}
+
+.product-list__item-foirgras--disabled .product-list__link--hover {
+    display: none;
+}
+
+.product-list__item-fish--active {
+    background: url("/2kg-back-red.png");
+    background-position-x: -24px;
+    width: 320px;
+    min-height: 480px;
+    position: relative;
+    background-position-x: -24px;
+    margin-left: 38px;
+    margin-right: 38px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.product-list__item-fish--active .product-list__link {
+    display: none;
+}
+
+.product-list__item-fish--active .product-list__link--hover {
+    display: block;
+    width: 320px;
+    left: 10px;
+    font-size: 14px;
+}
+
+.product-list__item-fish--disabled {
+    width: 320px;
+    min-height: 480px;
+    position: relative;
+    background: url("/2kg-disabled.png") no-repeat;
+    background-position-x: -24px;
+    margin-left: 38px;
+    margin-right: 38px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    color: rgba (255, 255 , 255, 0.3);
+}
+
+.product-list__item-fish--disabled .product-list__link--disabled {
+    position: absolute;
+    display: block;
+    left: 45px;
+    top: 475px;
+    color: yellow;
+    display: block;
+}
+
+.product-list__item-fish--disabled .product-list__link {
+    display: none;
+}
+
+.product-list__item-fish--disabled .product-list__link--hover {
+    display: none;
+}
+
+.product-list__item-chicken--active {
+    background: url("/5kg-back-red.png") no-repeat;
+    background-position-x: -24px;
+    width: 320px;
+    min-height: 480px;
+    position: relative;
+    background-position-x: -24px;
+    margin-left: 38px;
+    margin-right: 38px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.product-list__item-chicken--active .product-list__link {
+    display: none;
+}
+
+.product-list__item-chicken--active .product-list__link--hover {
+    display: block;
+}
+
+.product-list__item-chicken--disabled {
+    width: 320px;
+    min-height: 480px;
+    position: relative;
+    background: url("/5-disabled.png") no-repeat;
+    background-position-x: -24px;
+    margin-left: 38px;
+    margin-right: 38px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    color: rgba (255, 255 , 255, 0.3);
+}
+
+.product-list__item-chicken--disabled .product-list__link {
+    display: none;
+}
+
+.product-list__item-chicken--disabled .product-list__link--disabled {
+    position: absolute;
+    display: block;
+    left: 45px;
+    top: 475px;
+    color: yellow;
+    display: block;
+}
+
+.product-list__item-chicken--disabled .product-list__link--hover {
+    display: none;
+}
+
